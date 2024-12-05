@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Page</title>
+    <style>
+        .grid_header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid_headd{
+    margin-left: 125px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 25px);
+}
+
+.squre{
+    border: solid 2px rgb(2, 217, 255);
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.white_square{
+    font-size: 20px;
+}
+
+.grid_headd1{
+    grid-auto-flow: column;
+    margin-top: 40px;
+    margin-right: 140px;
+    display: grid;
+}
+
+.search{
+    border: solid 1px rgb(114, 114, 114);
+    background-color: rgb(236, 236, 236);
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-top: 8px;
+    color: rgb(102, 102, 102);
+}
+
+.go{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+    border: solid 1px rgb(114, 114, 114);
+    padding: 10px;
+}
+
+.grid_header1{
+    display: grid;
+    border: solid 1px rgb(114, 114, 114);
+    grid-template-columns: repeat(8, 1fr);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 125px;
+    margin-right: 140px;
+}
+
+.grid_text{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 8px;
+}
+
+.grid_text1{
+    background-color: rgb(236, 236, 236);
+    color: rgb(102, 102, 102);
+    padding: 8px;
+}
+
+.grid_header2{
+    display: grid;
+    border: solid 1px rgb(114, 114, 114);
+    margin-top: 60px;
+    margin-left: 125px;
+    margin-right: 140px;
+}
+
+.grid_cont{
+    grid-auto-flow: row;
+    display: grid;
+    padding-left: 40px;
+    padding-bottom: 100px;
+    background-color: rgb(199, 199, 199);
+    border: solid 1px rgb(114, 114, 114);
+}
+
+.cont_text{
+    font-size: 70px;
+}
+
+.cont_text1{
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    padding-bottom: 100px;
+}
+
+.grid_cont1{
+    display: grid;
+    border: solid 1px rgb(114, 114, 114);
+    grid-auto-flow: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(240, 235, 235);
+}
+
+.grid_col1{
+    display: flex;
+    padding-left: 10px;
+}
+
+.t1{
+    text-align: start;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px;
+}
+
+.text1{
+    font-size: 20px;
+    text-align: start;
+    color: rgb(255, 0, 0);
+    padding: 8px;
+}
+
+.grid_col2{
+    display: flex;
+    padding-left: 300px;
+}
+
+.t2{
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 10px;
+}
+
+.text2{
+    font-size: 20px;
+    text-align: start;
+    color: rgb(65, 65, 65);
+    padding: 8px;
+}
+
+.grid_col3{
+    display: flex;
+    padding-left: 300px;
+}
+
+.t3{
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 10px;
+}
+
+.text3{
+    font-size: 20px;
+    text-align: start;
+    color: rgb(65, 65, 65);
+    padding: 8px;
+}
+
+.grid_col4{
+    display: flex;
+    padding-left: 300px;
+}
+
+.t4{
+    text-align: end;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 10px;
+}
+
+.text4{
+    font-size: 20px;
+    text-align: end;
+    color: rgb(65, 65, 65);
+    padding: 8px;
+}
+
+.main{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid_main{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.blue_box{
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.text_box{
+    font-size: 20px;
+}
+
+.grid_main1{
+    grid-auto-flow: column;
+    margin-top: 40px;
+    margin-right: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    padding-right: 410px;
+}
+
+.blue_box1{
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.text_box1{
+    font-size: 20px;
+}
+
+.main1{
+    display: flex;
+}
+
+.cont_main{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    padding-right: 136px;
+}
+
+.gray_box{
+    border: solid 2px rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    margin-right: 5px;
+    margin-left: 170px;
+}
+
+.gray_text{
+    color: rgb(102, 102, 102);
+    padding-left: 20px;
+}
+
+.cont_main1{
+    grid-auto-flow: column;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+}
+
+.gray_box1{
+    border: solid 2px rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    margin-right: 5px;
+    margin-left: 170px;
+}
+
+.gray_text1{
+    color: rgb(102, 102, 102);
+    padding-left: 20px;
+}
+
+.main2{
+    display: grid;
+    grid-template-columns: repeat(3, 600px);
+}
+
+.grid_cont_main{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    padding-right: 100px;
+}
+
+.blue_cont{
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.text_cont{
+    font-size: 20px;
+}
+
+.grid_cont_main1{
+    grid-auto-flow: column;
+    margin-top: 40px;
+    margin-right: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    padding-right: 410px;
+}
+
+.blue_cont1{
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.text_cont1{
+    font-size: 20px;
+}
+
+.grid_cont_main2{
+    grid-auto-flow: column;
+    margin-top: 40px;
+    margin-right: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.blue_cont2{
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.text_cont2{
+    font-size: 20px;
+}
+
+.main3{
+    display: grid;
+    grid-template-columns: repeat(3, 600px);
+}
+
+.one_text{
+    color: rgb(102, 102, 102);
+    padding-left: 168px;
+}
+
+.one_text1{
+    color: rgb(102, 102, 102);
+    padding-left: 168px;
+}
+
+.tri_box_text{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    padding-right: 100px;
+}
+
+.tri_box1{
+    border: solid 2px rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    margin-right: 65px;
+    margin-left: 165px;
+    padding-top: 60px;
+}
+
+.tri_text1{
+    padding-right: 100px;
+}
+
+.tri_box2{
+    border: solid 2px rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    margin-top: 10px;
+    margin-right: 65px;
+    margin-left: 165px;
+    padding-top: 60px;
+}
+
+.tri_text2{
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.tri_box3{
+    border: solid 2px rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    margin-top: 10px;
+    margin-right: 65px;
+    margin-left: 165px;
+    padding-top: 60px;
+}
+
+.tri_text3{
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.back{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    padding-right: 100px;
+}
+
+.back_box{
+    border: solid 2px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+    padding-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.back_text{
+    font-size: 20px;
+}
+
+.grid_back{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    color: white;
+    padding-top: 20px;
+}
+
+.back1{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    padding-left: 170px;
+}
+
+.text_back2{
+    padding-left: 100px;
+}
+
+.back2{
+    margin-right: 350px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 25px);
+}
+
+.squre1{
+    border: solid 2px white;
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.white_square1{
+    font-size: 20px;
+}
+
+.p1{
+    color: rgb(190, 190, 190);
+}
+
+.back3{
+    display: grid;
+    grid-template-columns: repeat(3, 570px);
+    background-color: gray;
+    color: white;
+    padding-left: 170px;
+}
+
+.first_back{
+    color: rgb(190, 190, 190);
+}
+
+.second_back{
+    color: rgb(190, 190, 190);
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    padding-right: 150px;
+    padding-left: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="grid_header">
+
+        <div class="grid_headd">
+            <div class="squre"></div>
+            <div class="white_square"> WhiteSquare </div>
+        </div>
+
+        <div class="grid_headd1"> 
+            <div class="search"> Search </div>
+            <div class="go"> GO </div>
+        </div>
+
+    </div>
+
+    <div class="grid_header1">
+        <div class="grid_text"> Home </div>
+        <div class="grid_text1"> About Us </div>
+        <div class="grid_text1"> Services </div>
+        <div class="grid_text1"> Partners </div>
+        <div class="grid_text1"> Customers </div>
+        <div class="grid_text1"> Projects </div>
+        <div class="grid_text1"> Careers </div>
+        <div class="grid_text1"> Contact </div>
+    </div>
+
+    <div class="grid_header2">
+
+        <div class="grid_cont">
+            <div class="cont_text"> CSS Grid Layout </div>
+            <p class="cont_text1">  Это система двумерного макета, оптимизированная для дизайна пользовательского интерфейса. </p>
+        </div>
+
+        <div class="grid_cont1">
+
+            <div class="grid_col1">
+                <div class="t1"> 1 </div>
+                <div class="text1"> Grid-контейнер </div>
+            </div>
+
+            <div class="grid_col2">
+                <div class="t2"> 2 </div>
+                <div class="text2"> Свойство grid </div>
+            </div>
+
+            <div class="grid_col3">
+                <div class="t3"> 3 </div>
+                <div class="text3"> Grid-area </div>
+            </div>
+
+            <div class="grid_col4">
+                <div class="t4"> 4 </div>
+                <div class="text4"> Свойство grid-auto-flow </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="grid_main">
+            <div class="blue_box"></div>
+            <div class="text_box"> About WhiteSquare </div>
+        </div>
+
+        <div class="grid_main1">
+            <div class="blue_box1"></div>
+            <div class="text_box1"> A Word From Our CEO </div>
+        </div>
+
+    </div>
+
+    <div class="main1">
+
+        <div class="cont_main">
+            <div class="gray_box"></div>
+            <div class="gray_text"> Grid Layout is a special CSS3 module that allows you to position elements in the form of a grid or table. Like Flexbox, Grid Layout represents a flexible approach to the layout of elements, only if flexbox places nested elements in one direction - horizontally in the form of columns or vertically in the form of rows, then Grid positions elements in two directions at once - in the form of rows and columns, thereby forming a table. When using Grid Layout, it should be borne in mind that only relatively recently browser manufacturers began to implement support for this module in their browsers. Today we will look at the CSS Grid properties (hereinafter also referred to as the Grid), which allow you to create adaptive or responsive web page layouts. </div>
+        </div>
+
+        <div class="cont_main1">
+            <div class="gray_box1"></div>
+            <div class="gray_text1"> Grid Layout is a special CSS3 module that allows you to position elements in the form of a grid or table. Like Flexbox, Grid Layout represents a flexible approach to the layout of elements, only if flexbox places nested elements in one direction - horizontally in the form of columns or vertically in the form of rows, then Grid positions elements in two directions at once - in the form of rows and columns, thereby forming a table. When using Grid Layout, it should be borne in mind that only relatively recently browser manufacturers began to implement support for this module in their browsers. Today we will look at the CSS Grid properties (hereinafter also referred to as the Grid), which allow you to create adaptive or responsive web page layouts. </div>
+        </div>
+
+    </div>
+
+    <div class="main2">
+
+        <div class="grid_cont_main">
+            <div class="blue_cont"></div>
+            <div class="text_cont"> Services </div>
+        </div>
+
+        <div class="grid_cont_main1">
+            <div class="blue_cont1"></div>
+            <div class="text_cont1"> Our Teams </div>
+        </div>
+
+        <div class="grid_cont_main2">
+            <div class="blue_cont2"></div>
+        <div class="text_cont2"> 24/12/365 Support </div>
+        </div>
+
+    </div>
+
+    <div class="main3">
+
+        <div class="one_text"> Grid Layout is a special CSS3 module that allows you to position elements in the form of a grid or table. Like Flexbox, Grid Layout represents a flexible approach to the layout of elements, only if flexbox places nested elements in one direction - horizontally in the form of columns or vertically in the form of rows, then Grid positions elements in two directions at once - in the form of rows and columns, thereby forming a table. When using Grid Layout, it should be borne in mind that only relatively recently browser manufacturers began to implement support for this module in their browsers. Today we will look at the CSS Grid properties (hereinafter also referred to as the Grid), which allow you to create adaptive or responsive web page layouts. </div>
+
+        <div class="tri_box_text">
+            <div class="tri_box1"></div>
+            <div class="tri_text1"> Grid Layout <p>Свойство grid</p> </div>
+            <div class="tri_box2"></div>
+            <div class="tri_text2"> Grid Layout <p>Grid-контейнер</p> </div>
+            <div class="tri_box3"></div>
+            <div class="tri_text3"> Grid Layout <p>Позиционирование</p> </div>
+        </div>
+
+        <div class="one_text1"> Grid Layout is a special CSS3 module that allows you to position elements in the form of a grid or table. Like Flexbox, Grid Layout represents a flexible approach to the layout of elements, only if flexbox places nested elements in one direction - horizontally in the form of columns or vertically in the form of rows, then Grid positions elements in two directions at once - in the form of rows and columns, thereby forming a table. When using Grid Layout, it should be borne in mind that only relatively recently browser manufacturers began to implement support for this module in their browsers. Today we will look at the CSS Grid properties (hereinafter also referred to as the Grid), which allow you to create adaptive or responsive web page layouts. </div>
+
+    </div>
+
+    <div class="back">
+        <div class="back_box"></div>
+        <div class="back_text"> Our Clients </div>
+    </div>
+    
+    <div class="grid_back">
+        <div class="back1">
+            <div class="text_back1"> Twitter Feed </div>
+            <div class="text_back2"> SiteMap </div>
+            <div class="text_back3"> Social Networks </div>
+        </div>
+
+        <div class="back2">
+            <div class="squre1"></div>
+            <div class="white_square1"> WhiteSquare </div>
+        </div>
+    </div>
+    
+    <div class="back3">
+
+        <div class="first_back"> 23 oct <p>Grid Layout is a special CSS3 module that allows you to position elements in the form of a grid or table. Like Flexbox, Grid Layout represents a flexible approach to the layout of elements, only if flexbox places nested elements in one direction - horizontally in the form of columns or vertically in the form of rows, then Grid positions elements in two directions at once - in the form of rows and columns, thereby forming a table. When using Grid Layout, it should be borne in mind that only relatively recently browser manufacturers began to implement support for this module in their browsers. Today we will look at the CSS Grid properties (hereinafter also referred to as the Grid), which allow you to create adaptive or responsive web page layouts.</p> </div>
+
+        <div class="second_back">
+            <div class="back_row1"> Home </div>
+            <div class="back_row11"> Partners </div>
+            <div class="back_row2"> About </div>
+            <div class="back_row22"> Support </div>
+            <div class="back_row3"> Services </div>
+            <div class="back_row33"> Contact </div>
+        </div>
+
+        <div class="three_back"></div>
+
+    </div>
+</body>
+</html>
