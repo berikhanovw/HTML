@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">LADA</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button" onclick="window.location.href='#contact'">Записаться на Тест-Драйв</button>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            
+            <h1>Раскройте Зверя</h1>
+            <p>Мощь, Скорость, Стиль</p>
+            <button class="cta-button" onclick="window.location.href='#home'">Узнать Больше</button>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="models">
+        <h2>Модели LADA</h2>
+        <div class="model-cards">
+            <div class="model-card">
+                <img src="img/flgranta — копия.jpeg" alt="FL">
+                <h3>Lada</h3>
+                <p>Модель: Granta FL</p>
+                <p>Мощь: 106 л.с.</p>
+                <p>Цена: $10,000</p>
+                <button class="info-button" onclick="showInfo('competition')">Подробнее</button>
+                <div id="competition" class="model-info">
+                    <p>Кузов: Седан</p>
+                    <p>Разгон до 100 км/ч: 11 сек</p>
+                    <p>Максимальная Скорость: 220 км/ч</p>
+                </div>
+            </div>
+            <div class="model-card">
+                <img src="./img/Muskarik.webp" alt="Priora" width="427px" height="320px">
+                <h3>LADA</h3>
+                <p>Модель: Priora</p>
+                <p>Мощь: 106 л.с.</p>
+                <p>Цена: $8,000</p>
+                <button class="info-button" onclick="showInfo('standard')">Подробнее</button>
+                <div id="standard" class="model-info">
+                    <p>Кузов: Седан</p>
+                    <p>Разгон до 100 км/ч: 10.3 сек</p>
+                    <p>Максимальная Скорость: 230 км/ч</p>
+                </div>
+            </div>
+            <div class="model-card">
+                <img src="./img/vesta.webp" alt="vesta" width="427px" height="320px">
+                <h3>LADA</h3>
+                <p>Модель: Vesta</p>
+                <p>Мощь: 144 л.с.</p>
+                <p>Цена: $13,000</p>
+                <button class="info-button" onclick="showInfo('touring')">Подробнее</button>
+                <div id="touring" class="model-info">
+                    <p>Кузов: Седан</p>
+                    <p>Разгон до 100 км/ч: 8.2 сек</p>
+                    <p>Максимальная Скорость: 240 км/ч</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history">
+        <h2>История Lada</h2>
+        <div class="history-timeline">
+            <div class="history-item">
+                <img src="./img/Lada.jpg" width="327px" height="200px">
+                <h3>1966: Основание Lada</h3>
+                <p>Компания «АвтоВАЗ», которая производит автомобили под брендом Lada, была основана 20 июля 1966 года. В этот день вышло Постановление правительства СССР о строительстве в городе Тольятти завода по выпуску 600 тысяч легковых автомобилей в год.</p>
+            </div>
+            <!-- <div class="history-item">
+                <img src="./img/modell5.jpeg">
+                <h3>1923: Первый мотоцикл BMW</h3>
+                <p>Выпуск первого мотоцикла BMW R 32 с горизонтально-оппозитным двигателем.</p>
+            </div> -->
+            <div class="history-item" >
+                <img src="./img/2101.jpg" width="327px" height="200px">
+                <h3>1970: Первый автомобиль Lada</h3>
+                <p>Первый автомобиль LADA, модель ВАЗ-2101 «Жигули», сошёл с конвейера Волжского автозавода 19 апреля 1970 года.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/2107.jpg" width="327px" height="200px">
+                <h3>1982: Lada 2107</h3>
+                <p>ВАЗ-2107 — легковая заднеприводная модель от Волжского автомобильного завода. Выпуск авто налажен с 1982 года.</p>
+            </div>
+            <!-- <div class="history-item">
+                <img src="./img/modell8.jpeg">
+                <h3>1951: Возвращение в автомобильный бизнес</h3>
+                <p>BMW возвращается в автомобильный бизнес с моделью 501.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell9.jpeg">
+                <h3>1972: Основание подразделения BMW M</h3>
+                <p>Основание подразделения BMW M для разработки спортивных автомобилей.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell10.jpeg">
+                <h3>1984: Первое поколение BMW M5</h3>
+                <p>Выпуск первого поколения BMW M5 с двигателем M88/3 мощностью 286 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell11.jpeg">
+                <h3>1988: BMW M5 E34</h3>
+                <p>Второе поколение с двигателем S38B36 мощностью 315 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell12.jpeg">
+                <h3>1998: BMW M5 E39</h3>
+                <p>Третье поколение с двигателем S62B50 мощностью 400 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell13.jpeg">
+                <h3>2005: BMW M5 E60</h3>
+                <p>Четвертое поколение с двигателем S85B50 мощностью 507 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell14.jpeg">
+                <h3>2011: BMW M5 F10</h3>
+                <p>Пятое поколение с двигателем S63B44TÜ мощностью 560 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell15.jpeg">
+                <h3>2017: BMW M5 F90</h3>
+                <p>Шестое поколение с двигателем S63B44T4 мощностью 600 л.с.</p>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./img/vesta.webp" alt="vesta">
+                <div class="gallery-info">
+                    <h3>Lada</h3>
+                    <p>Модель: Vesta</p>
+                    <p>Мощь: 144 л.с.</p>
+                    <p>Разгон до 100 км/ч: 8.2 сек</p>
+                    <p>Максимальная Скорость: 240 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/Muskarik.webp" alt="priora">
+                <div class="gallery-info">
+                    <h3>Lada</h3>
+                    <p>Модель: Priora</p>
+                    <p>Мощь: 106 л.с.</p>
+                    <p>Разгон до 100 км/ч: 10.3 сек</p>
+                    <p>Максимальная Скорость: 230 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/flgranta — копия.jpeg" alt="flgranta">
+                <div class="gallery-info">
+                    <h3>Lada</h3>
+                    <p>Модель: Granta FL</p>
+                    <p>Мощь: 106 л.с.</p>
+                    <p>Разгон до 100 км/ч: 11 сек</p>
+                    <p>Максимальная Скорость: 220 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/2101.jpg" alt="kopeika">
+                <div class="gallery-info">
+                    <h3>Lada</h3>
+                    <p>Модель: 2101</p>
+                    <p>Мощь: 67 л.с.</p>
+                    <p>Разгон до 100 км/ч: 18.2 сек</p>
+                    <p>Максимальная Скорость: 180 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/2107.jpg" alt="seven">
+                <div class="gallery-info">
+                    <h3>Lada</h3>
+                    <p>Модель: 2107</p>
+                    <p>Мощь: 67 л.с.</p>
+                    <p>Разгон до 100 км/ч: 18 сек</p>
+                    <p>Максимальная Скорость: 180 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/diyt.jpg" alt="14" width="327px" height="300px">
+                <div class="gallery-info">
+                    <h3>Lada</h3>
+                    <p>Модель: 2114</p>
+                    <p>Мощь: 77 л.с.</p>
+                    <p>Разгон до 100 км/ч: 7 сек</p>
+                    <p>Максимальная Скорость: 260 км/ч</p>
+                </div>
+            </div>
+            <!-- <div class="gallery-item">
+                <img src="./img/modell22.jpeg" alt="BMW M5 F90 Competition">
+                <div class="gallery-info">
+                    <h3>BMW M5 F90 Competition</h3>
+                    <p>Модель: F90</p>
+                    <p>Мощь: 625 л.с.</p>
+                    <p>Разгон до 100 км/ч: 3.3 сек</p>
+                    <p>Максимальная Скорость: 305 км/ч</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Свяжитесь с Нами</h2>
+        <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Сообщение" required></textarea>
+            <button type="submit" class="cta-button">Отправить</button>
+        </form>
+        <div class="contact-info">
+            <p>Адрес: г. Назрань, ул. Заводская 10 (ITHUB)</p>
+            <p>Телефон: +7 (960) 434-02-55</p>
+            <p>Email: info@magas.ithub.ru</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">LADA</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 LADA. Все права защищены.</p>
+    </footer>
+
+    <script src="js/js/main.js"></script>
+</body>
+</html>
