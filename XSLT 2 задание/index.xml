@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<timeTable>
+
+  <offices>
+
+    <office class="Paris">
+        <name>Paris</name>
+        <address>Респ. Ингушетия, ул. Заводская, 10, Назрань, 386101</address>
+    </office>
+
+    <office class="Geneva">
+        <name>Geneva</name>
+        <address>Респ. Ингушетия, ул. Заводская, 10, Назрань, 386101</address>
+    </office>
+
+    <office class="Brussels">
+        <name>Brussel</name>
+        <address>Респ. Ингушетия, ул. Заводская, 10, Назрань, 386101</address>
+    </office>
+
+  </offices>
+
+  <couples>
+
+    <couple lesson="1" auditorium="Paris">
+        <pair>XML технологии</pair>
+        <date>2025-04-02</date>
+        <time>09:00</time>    
+    </couple>
+
+    <couple lesson="2" auditorium="Paris">
+        <pair>JavaScript DOM</pair>
+        <date>2025-04-02</date>
+        <time>11:25</time>
+    </couple>
+
+    <couple lesson="3" auditorium="Geneva">
+        <pair>Основы IT-менеджмента</pair>
+        <date>2025-04-02</date>
+        <time>12:45</time>    
+    </couple>
+
+    <couple lesson="4" auditorium="Geneva">
+        <pair>Основы философии</pair>
+        <date>2025-04-02</date>
+        <time>14:25</time>    
+    </couple>  
+
+
+    <couple lesson="5" auditorium="Brussels">
+        <pair>СУБД</pair>
+        <date>2025-04-03</date>
+        <time>09:00</time>    
+    </couple>
+
+    <couple lesson="6" auditorium="Brussels">
+        <pair>JavaScript DOM</pair>
+        <date>2025-04-03</date>
+        <time>10:30</time>
+    </couple>
+
+  </couples>
+
+</timeTable>
